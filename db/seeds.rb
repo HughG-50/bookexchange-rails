@@ -42,13 +42,13 @@ list_of_non_fiction_genres = [
 
 # seed Fiction Genres
 for genre in list_of_fiction_genres
-    Genre.create(name: genre, is_fiction: true)
+    Genre.create(name: genre, type: "Fiction")
     puts "#{genre} Genre created"
 end
 
 # seed Non-Fiction Genres
 for genre in list_of_non_fiction_genres
-    Genre.create(name: genre, is_fiction: false)
+    Genre.create(name: genre, type: "Non_fiction")
     puts "#{genre} - Genre created"
 end
 
