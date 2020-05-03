@@ -1,0 +1,17 @@
+<h1>Global Book Exchange - All Listings</h1>
+<% for listing in @listings %>
+    <li>
+        <%# links to the View page version of the listing %>
+        <%# "view" is the text label of the rendered link %>
+        <%# <%= link_to "view", listing_path(listing) %> 
+
+        <%# <%= link_to listing.title, listing_path(listing.id)%>
+
+        <%# DELETE THESE LINES LATER - PROBABLY WRONG %>
+        <%= listing.title %>
+        <%= listing.authors.name %>
+        <%= listing.genres.category %>
+
+ 
+    </li>
+<% end %>
