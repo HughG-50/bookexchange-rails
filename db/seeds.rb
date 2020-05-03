@@ -1,7 +1,17 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# Old seeding using Faker Gem
+
+# initial_total_genres = 20
+# initial_total_authors = 50
+
+# for i in 1..initial_total_genres
+#     name = Faker::Book.genre
+#     Genre.create(name: name)
+#     puts "#{name} created"
+# end
+
+# for i in 1..initial_total_authors
+#     name = Faker::Book.author
+#     Author.create(name: Faker::Book.author)
+#     puts "#{name} created"
+# end
+
